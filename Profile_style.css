@@ -1,0 +1,213 @@
+body{
+    margin:0;
+    background-image:url("Paint_texture.jpg");
+    background-size:cover;
+    background-position:center;
+    display: block;
+    
+}
+
+main{
+    margin-left:10px;
+    margin-top:50px;
+    margin-bottom:100px;
+    margin-right:10px;
+}
+
+
+.navbar ul{
+    list-style-type:none;
+    padding:0px;
+    margin:0;
+    overflow:hidden;
+}
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:black;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:3px rgba(255, 255, 255, 0.5) solid;
+    z-index: 9999;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    display:inline-block;
+    text-align:center;
+    border-bottom:3px transparent solid;
+}
+
+.navbar li{
+    float:right;
+    font-size:25px;
+    padding:10px;
+    width:80px;
+    margin-right:10px;
+    text-align:center;
+    line-height:50px;
+}
+
+
+.header_image{
+    height:auto;
+    width: 70%;
+    margin-top:100px;
+    display: flex;
+    margin-left:15%
+}
+
+hr{
+    width: 80%;
+}
+
+.navbar a.current{
+    border-bottom:3px solid rgb(111, 165, 115);
+}
+
+li a:hover{
+    border-bottom:3px solid rgb(111, 165, 115);
+    transition:0.3s;
+}
+
+.logo a{
+    display:flex;
+    align-items:center;
+}
+
+.navbar .logo img{
+    height:50px;
+    margin-left:10px;
+    justify-content:center;
+    align-items:center;
+    margin-top:15px;
+}
+
+.navbar .logo .mobile{
+    display:none;
+}
+
+
+main div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 0px;
+    margin: 10px;
+}
+
+
+main div .Legend{
+    width:250px;
+    height: auto;
+    margin: 10px;
+    border: 3px transparent solid;
+}
+
+main div .Legend:hover{
+
+    transform: scale(1.08);
+    border: 3px solid white;
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+
+main div .support_card{
+    width:200px;
+    height: auto;
+    margin: 10px;
+    border: 3px transparent solid;
+}
+
+main div .support_card:hover{
+
+    transform: scale(1.08);
+    border: 3px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+footer{
+    height:50px;
+    background-color:#333333;
+    border-top:3px white solid;
+    color:white;
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    .navbar .logo img{
+        display:none;
+    }
+    .navbar{
+        align-items:center;
+        justify-content:space-between;
+        height:10%;
+    }
+
+    header{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header_image{
+        width: 90%;
+        height: auto;
+        display: block;
+        margin-left: 0;
+    }
+    .navbar .logo .laptop{
+        display:none;
+    }
+    .navbar .logo .mobile{
+        display:flex;
+        height:30px;
+        justify-content:space-between;
+        margin-bottom:10px;
+        margin-left:10px;
+    }
+
+    .navbar li{
+        width:70px;
+        margin-right:15px;
+        font-size:20px;
+        letter-spacing:1px;
+    }
+
+    main div {
+        display: flex;         
+        flex-wrap: wrap;       
+        justify-content: center;          
+        margin: 10px;
+    }
+
+
+    main div .support_card{
+        width: 130px;
+        height: auto;
+    }
+
+    main div .Legend{
+        width:200px;
+        height: auto;
+    }
+
+
+
+    footer{
+        width:100%;
+        height:40px;
+        font-size: x-small;
+        margin-left:0;
+        position: fixed; bottom: 0;
+    }
+        
+    }
