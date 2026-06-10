@@ -112,7 +112,7 @@ main div .poster{
     border: 3px white solid;
 }
 
-main div .poster_set{
+main a img.poster_set{
     width:480px;
     height:350px;
     margin-bottom: 25px;
